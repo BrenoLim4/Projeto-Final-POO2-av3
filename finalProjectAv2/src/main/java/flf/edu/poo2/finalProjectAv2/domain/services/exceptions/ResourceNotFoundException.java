@@ -1,2 +1,9 @@
-package flf.edu.poo2.finalProjectAv2.domain.services.exceptions;public class ResourceNotFoundException {
+package flf.edu.poo2.finalProjectAv2.domain.services.exceptions;
+
+public class ResourceNotFoundException extends RuntimeException{
+
+    public ResourceNotFoundException(Object id) {
+        super("Resource not found. Id =" + id);
+    }
+
 }
