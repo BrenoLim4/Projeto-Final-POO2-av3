@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Entity
-@Table(schema = "spring_data", name = "aluno_x_turma")
+@Table(schema = "poo2_av3", name = "aluno_x_turma")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

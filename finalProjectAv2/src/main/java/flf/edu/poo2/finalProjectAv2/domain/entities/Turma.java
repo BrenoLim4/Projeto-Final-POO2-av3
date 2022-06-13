@@ -10,7 +10,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @Entity
-@Table(schema = "spring_data", name = "turma")
+@Table(schema = "poo2_av3", name = "turma")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -24,5 +24,8 @@ public class Turma implements Serializable {
     private String disciplina;
     @Column
     private Integer ano;
+    @JoinColumn(name = "id_professor", referencedColumnName = "id")
+    @ManyToOne
+    private Professor professor;
 
 }

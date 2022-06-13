@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(schema = "spring_data", name = "professor")
+@Table(schema = "poo2_av3", name = "professor")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

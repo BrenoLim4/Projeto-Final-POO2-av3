@@ -17,6 +17,13 @@ public class AlunoServices {
         return alunoRepository.save(aluno);
     }
 
+    public Aluno atualizar(Aluno aluno){
+        if(aluno.getId() != null){
+            return alunoRepository.save(aluno);
+        }
+        throw new RuntimeException("Nenhum aluno encontrado para o filtro especificado");
+    }
+
     public void deleteById(Long id){
         alunoRepository.deleteById(id);
     }

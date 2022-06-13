@@ -1,0 +1,28 @@
+.divDefaultCadastro{
+display: flex;
+flex-direction: column;
+width: 100%;
+justify-content: center;
+align-items: center;
+}
+
+.formCadastro{
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    border-style: groove;
+    padding: 1px;
+    background-color: lightslategray;
+}
+
+body{
+    background-color: indigo;
+    font-family: arial;
+    font-style: bold;
+}
+
+.tituloCadastro{
+    margin-top: 5%;
+    font: bold 18pt arial;
+    color: snow;
+}

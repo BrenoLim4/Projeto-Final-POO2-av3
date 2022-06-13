@@ -9,7 +9,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(schema = "spring_data", name = "aluno")
+@Table(schema = "poo2_av3", name = "aluno")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -19,7 +19,7 @@ public class Aluno implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(unique = true, length = 8)
+    @Column(unique = true, length = 8, nullable = false)
     private String matricula;
     @Column(nullable = false, length = 100)
     private String nome;
